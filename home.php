@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Home Page Samplee</h1>
+    <h1>Home Page Sampleee</h1>
     <p>tite</p>
     <img src="assets/monke.jpg" alt="monke" width="300">
 </body>
