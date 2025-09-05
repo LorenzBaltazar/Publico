@@ -16,56 +16,90 @@
     <h1 style="text-align: center;">About Publico</h1>
 </header>
 
-<main>
-    <h2>What is Publico?</h2>
-    <p>
-        Publico is a web-based reservation system designed for the residents of Orani. 
-        It makes booking municipal-owned facilities — such as basketball courts, function halls, 
-        and meeting rooms — faster and more convenient. 
-    </p>
+<main class="about-page">
+    <!-- Banner image with no padding -->
+    <img src="assets/images/aboutbanner.jpg" alt="About Publico Banner" class="about-banner">
 
-    <h2>Our Purpose</h2>
-    <p>
-        Publico was built to save residents time and effort while helping municipal staff 
-        manage reservations more efficiently. The system ensures fairness in scheduling, 
-        reduces long queues, and improves transparency in facility usage.
-    </p>
+    <!-- Wrapped content with normal padding -->
+    <div class="content">
+        <h2>What is Publico?</h2>
+        <p>
+            Publico is the official online reservation system of the Municipality of Orani, 
+            developed to provide residents with a modern and reliable way of accessing 
+            government-owned facilities. Through this platform, the community can book 
+            basketball courts, function halls, meeting rooms, and other public spaces 
+            without the need to visit the municipal hall personally, reducing long queues 
+            and saving valuable time.
+        </p>
 
-    <h2>Key Features</h2>
-    <ul>
-        <li>Easy registration and login for residents</li>
-        <li>Quick facility availability checking</li>
-        <li>Online reservation, cancellation, and history tracking</li>
-        <li>Administrator tools for approving and managing bookings</li>
-        <li>Facility usage reports for better record-keeping</li>
-    </ul>
+        <h2>Our Purpose</h2>
+        <p>
+            The system was created with the goal of making local government services more 
+            transparent, accessible, and efficient. By digitizing the reservation process, 
+            Publico helps ensure fairness in scheduling, improves the management of community 
+            resources, and strengthens the connection between the municipal government and 
+            the people it serves. It represents Orani’s commitment to modernization and 
+            better service delivery for every resident.
+        </p>
 
-    <h2>Who Benefits?</h2>
-    <p><strong>Residents:</strong> Convenient booking without visiting the municipal hall</p>
-    <p><strong>Administrators:</strong> Simplified reservation management and reporting</p>
-    <p><strong>Local Government:</strong> Improved efficiency, transparency, and service delivery</p>
+        <h2>Services Offered</h2>
+        <ul>
+            <li>Online reservation of municipal facilities such as sports courts, halls, and meeting rooms.</li>
+            <li>Schedule viewing and availability checking to help residents plan events in advance.</li>
+            <li>Reservation management tools for municipal staff to approve, track, and organize bookings efficiently.</li>
+            <li>Record-keeping and facility usage monitoring for improved transparency and accountability.</li>
+            <li>Community support and assistance for residents needing help with their reservations.</li>
+        </ul>
 
-    <h2>Founders</h2>
-    <div class="founders">
-        <div class="founder-card">
-            <h3>Arvin</h3>
-            <p>Developer & System Designer</p>
+        <h2>Who Benefits?</h2>
+        <p>
+            <strong>Residents:</strong> Gain the convenience of booking public facilities from the comfort 
+            of their homes, eliminating the need for long waits and repeated visits to the municipal hall.  
+        </p>
+        <p>
+            <strong>Municipal Staff:</strong> Benefit from easier reservation tracking and better-organized 
+            records, allowing them to focus on delivering quality service to the community.  
+        </p>
+        <p>
+            <strong>Local Government:</strong> Enhances transparency and accountability, while promoting 
+            inclusivity by making services more accessible to all citizens.  
+        </p>
+
+        <h2>Founders</h2>
+        <div class="founders">
+            <div class="founder-card">
+                <img src="assets/images/arvin.png" alt="Arvin Rome Layug">
+                <h3>Arvin Rome Layug</h3>
+                <p>Developer & System Designer</p>
+            </div>
+            <div class="founder-card">
+                <img src="assets/images/lorenz.png" alt="Lorenz Baltazar">
+                <h3>Lorenz Baltazar</h3>
+                <p>Developer & Project Manager</p>
+            </div>
+            <div class="founder-card">
+                <img src="assets/images/jade.png" alt="Jade Jiro Roldan">
+                <h3>Jade Jiro Roldan</h3>
+                <p>Front End Developer</p>
+            </div>
+            <div class="founder-card">
+                <img src="assets/images/axel.jpg" alt="Axel John Flores">
+                <h3>Axel John Flores</h3>
+                <p>Tester & Researcher</p>
+            </div>
+            <div class="founder-card">
+                <img src="assets/images/gio.jpg" alt="John Gilbert Franco">
+                <h3>John Gilbert Franco</h3>
+                <p>Data Analyst</p>
+            </div>
         </div>
-        <div class="founder-card">
-            <h3>Lorenz</h3>
-            <p>Backend Developer</p>
-        </div>
-        <div class="founder-card">
-            <h3>[Add More]</h3>
-            <p>Role</p>
-        </div>
-    </div>
 
-    <h2>Contact Information</h2>
-    <div class="contact">
-        <p><strong>Email:</strong> publico.orani@gmail.com</p>
-        <p><strong>Phone:</strong> +63 912 345 6789</p>
-        <p><strong>Address:</strong> Orani Municipal Hall, Bataan, Philippines</p>
+        <h2>Contact Information</h2>
+        <div class="contact">
+            <p><strong>Email:</strong> publico.orani@gmail.com</p>
+            <p><strong>Phone:</strong> +63 912 345 6789</p>
+            <p><strong>Address:</strong> Orani Municipal Hall, Bataan, Philippines</p>
+        </div>
     </div>
 </main>
 

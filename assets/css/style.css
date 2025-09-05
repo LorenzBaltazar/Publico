@@ -1,26 +1,41 @@
-/* General reset */
+/* ================================
+   Base / Global Styles
+==================================*/
+/* General reset / base */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: small; /* small text for sleek look */
+  background-color: #f4f6f9;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* Navbar */
+/* ================================
+   Navbar
+==================================*/
 nav {
-  background: #00509E;
+  background: linear-gradient(90deg, #00458a, #0074d9);
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 2rem;
+  padding: 0.1rem 0.5rem; /* controls navbar height */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: sticky; /* stays visible when scrolling */
+  top: 0;
+  z-index: 1000;
 }
+
+/* Logo (left side of navbar) */
 nav .logo {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: yellow;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffdf5d; /* modern yellow accent */
+  letter-spacing: 1px;
 }
+
+/* Navigation links (middle) */
 nav ul {
   list-style: none;
   display: flex;
@@ -33,59 +48,170 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
+nav ul li a:hover {
+  color: #ffdf5d;
+}
+
+/* Account section (right side) */
 nav .account {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Login button */
+.btn-login {
+  background: yellow;
+  color: #00509E;   /* deep blue text */
+  padding: 0.2rem 1rem;
+  border-radius: 6px;
   font-weight: bold;
-  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-login:hover {
+  background: #ffea6b; /* lighter yellow */
+  transform: translateY(-2px);
 }
 
-/* Main content */
+/* Account links (when logged in, e.g. profile + logout) */
+.btn-account {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn-account:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   Main container
+==================================*/
 main {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+  max-width: 950px;
+  margin: 2rem auto;
   background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-/* Headers */
+/* Special: About page (remove padding for banner to stick) */
+main.about-page {
+  padding: 0;
+}
+main.about-page .content {
+  padding: 2rem;
+}
+
+/* ================================
+   Banner Image
+==================================*/
+.about-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px 12px 0 0; /* only top corners rounded */
+  object-fit: cover;
+  max-height: 350px;
+}
+
+/* ================================
+   Headers
+==================================*/
 h1, h2 {
-  color: #00509E;
+  color: #00458a;
+  margin-bottom: 0.8rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
-/* Founders grid */
+/* ================================
+   Founders Section
+==================================*/
+/* Grid layout for founder cards */
 .founders {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* slimmer width */
   gap: 1rem;
   margin: 1.5rem 0;
 }
+
+/* Each founder card */
 .founder-card {
-  background: #f1f1f1;
-  padding: 1rem;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
   border-radius: 8px;
+  overflow: hidden; /* ensures image edges match container */
   text-align: center;
+  font-size: 0.9rem; /* smaller text for sleek look */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.founder-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
 
-/* Contact box */
-.contact {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: #eef6ff;
-  border-radius: 8px;
+/* Founder photo inside the card */
+.founder-card img {
+  width: 100%;        /* fills container width */
+  height: 180px;      /* fixed consistent height */
+  object-fit: cover;  /* crop image neatly */
+  display: block;
 }
 
-/* Footer */
-footer {
-  margin-top: 2rem;
-  text-align: center;
-  padding: 1rem;
-  background: #eee;
+/* Founder text */
+.founder-card h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1rem;
+  color: #00509E;
+}
+.founder-card p {
+  margin: 0 0 0.8rem;
+  font-size: 0.85rem;
   color: #555;
 }
 
+/* ================================
+   Contact Section
+==================================*/
+.contact {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #e9f3ff;
+  border-radius: 12px;
+  border-left: 5px solid #0074d9;
+}
+.contact p {
+  margin: 0.4rem 0;
+}
+
+/* ================================
+   Footer
+==================================*/
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1rem;
+  background: #f1f1f1;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* ================================
+   Utilities
+==================================*/
 .center-text {
   text-align: center;
 }

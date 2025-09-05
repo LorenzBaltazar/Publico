@@ -11,9 +11,10 @@
     <?php
       session_start();
       if (isset($_SESSION['user'])) {
-          echo '<a href="profile.php" style="color:white;">' . $_SESSION['user'] . '</a> | <a href="logout.php" style="color:white;">Logout</a>';
+          echo '<a href="profile.php" class="btn-account">' . $_SESSION['user'] . '</a> | 
+                <a href="logout.php" class="btn-account">Logout</a>';
       } else {
-          echo '<a href="login.php" style="color:white;">Login</a>';
+          echo '<a href="login.php" class="btn-login">Login</a>';
       }
     ?>
   </div>
