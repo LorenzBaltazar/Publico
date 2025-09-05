@@ -51,7 +51,7 @@
             <li>Community support and assistance for residents needing help with their reservations.</li>
         </ul>
 
-        <h2>Who Benefits? </h2>
+        <h2>Who Benefits?</h2>
         <p>
             <strong>Residents:</strong> Gain the convenience of booking public facilities from the comfort 
             of their homes, eliminating the need for long waits and repeated visits to the municipal hall.  
