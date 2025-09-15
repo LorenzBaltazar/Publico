@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    content: "";
+      position: fixed;
+       top: 0; left: 0;
+         width: 100%; height: 100%;
+          background: rgba(0,0,0,0.45);
+            z-index: -1;
+  height: 100%;
+   background: url("../images/background.JPG") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  
+}
+.register-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.register-link a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+  color: #a54ef0;
+}
+
+.login-box select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-box select:focus {
+  box-shadow: 0 0 8px #830ad4;
+}
+/* Two-column form layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 10px; /* space between fields */
+}
+
+/* Make button and select span full width */
+.form-grid .full-width,
+.form-grid select {
+  grid-column: span 2;
+}
+
+/* Centered container */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeDown 1.5s ease;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  animation: fadeDown 2s ease;
+}
+
+/* Icons (graphics) */
+.icons {
+  margin: 20px 0;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  animation: fadeIn 2.5s ease;
+}
+
+.icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  animation: float 3s ease-in-out infinite;
+}
+.title, .tagline, .login-box, .login-box h2 {
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+}
+.login-box button, .register-box button {
+  background: linear-gradient(135deg, #830ad4, #a54ef0);
+}
+.login-box button:hover, .register-box button:hover {
+  background: linear-gradient(135deg, #6a0dad, #9134d8);
+}
+/* Register Box (wider than login box) */
+.register-box{
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 15px;
+  width: 600px;   /* wider */
+  margin: 0 auto;
+  animation: fadeUp 1.8s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.register-box:hover {
+  transform: scale(1.02);
+}
+
+/* Two-column form layout (register only) */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-grid .full-width,
+.form-grid select {
+  grid-column: span 2;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* Login Box */
+.login-box, .register-box  {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  padding: 25px;
+  border-radius: 15px;
+  width: 300px;
+  margin: 0 auto;
+  animation: fadeUp 1.8s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.login-box:hover, .register-box:hover {
+  transform: scale(1.03);
+}
+
+.login-box h2, .register-box h2 {
+  margin-bottom: 15px;
+  color: #fff;
+  animation: fadeIn 2s ease;
+}
+
+.login-box input, .register-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+.login-box input, .register-box input,
+.login-box select, .register-box select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+.login-box input:focus, .register-box input:focus,
+.login-box select:focus, .register-box select:focus {
+  box-shadow: 0 0 8px #830ad4;
+}
+
+.login-box button, .register-box button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #830ad4, #a54ef0);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: pulse 2s infinite;
+}
+
+.login-box button:hover, .register-box button:hover {
+  background: linear-gradient(135deg, #6a0dad, #9134d8);
+  transform: translateY(-3px);
+}
+.login-box { width: 300px; }
+.register-box { width: 600px; }
+
+/* Animations */
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(40px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(131,10,212,0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(131,10,212,0); }
+  100% { box-shadow: 0 0 0 0 rgba(131,10,212,0); }
+}
