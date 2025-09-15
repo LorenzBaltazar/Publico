@@ -1,8 +1,9 @@
 <?php
-session_start();
+  session_start();
 ?>
-<nav class="navbar">
- <a href="home.php" class="logo">Publico</a>
+<nav>
+  <div class="logo">
+    <a href="home.php">Publico</a>
   </div>
   <ul class="nav-links">
     <li><a href="home.php">Home</a></li>
@@ -10,7 +11,7 @@ session_start();
     <li><a href="reservation.php">Reservation</a></li>
     <li><a href="about.php">About</a></li>
   </ul>
-  <div class="account-btns">
+  <div class="account">
     <?php
       if (isset($_SESSION['user'])) {
           echo '<a href="profile.php" class="btn-account">' . $_SESSION['user'] . '</a> | 
